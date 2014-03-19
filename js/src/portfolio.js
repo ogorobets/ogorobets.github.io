@@ -201,6 +201,11 @@
 				this.createTabs(folder);
 				event.preventDefault();	
 			}, this));
+
+			var firtListGroupItem = listGroup.find('a.list-group-item').eq(0);
+			firtListGroupItem.addClass('active');
+			var folder = firtListGroupItem.data('folder');
+			this.createTabs(folder);
 		}, this));
 	};
 
