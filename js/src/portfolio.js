@@ -25,7 +25,7 @@
 		var codeTemplate = '<div class="tab-pane fade" id="{{idCode}}"><pre><code></code></pre></div>';
 		codeTemplate = codeTemplate.replace('{{idCode}}', idCode);
 		
-		$.get(fileURL, 'text').done($.proxy(function (code) {
+		$.get(fileURL, 'html').done($.proxy(function (code) {
 			var codeContainer = $(codeTemplate);
 			codeContainer.find('code').text(code);
 			this.tabContainer.find('.tab-content').append(codeContainer);
