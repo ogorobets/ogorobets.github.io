@@ -25,15 +25,14 @@
 		var codeTemplate = '<div class="tab-pane fade" id="{{idCode}}"><pre><code></code></pre></div>';
 		codeTemplate = codeTemplate.replace('{{idCode}}', idCode);
 		
-		$.get(fileURL, 'html').done($.proxy(function (code) {
+		$.get(fileURL, $.proxy(function (code) {
 			var codeContainer = $(codeTemplate);
 			codeContainer.find('code').text(code);
 			this.tabContainer.find('.tab-content').append(codeContainer);
 			var codeEl = codeContainer.find('code')[0];
 			hljs.configure({tabReplace: '    '});
-			//hljs.configure({languages: ['xml']});
 			hljs.highlightBlock(codeEl);
-		}, this));
+		}, this), 'text');
 
 	};
 
