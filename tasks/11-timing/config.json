@@ -1,0 +1,5 @@
+{	
+	"folders": ["js", "css"],
+	"display": true,
+	"rootClass": "CreateTimer"
+}

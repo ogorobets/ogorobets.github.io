@@ -1,0 +1,3 @@
+{
+	"files": ["createCachable.js", "createKeeper.js", "createSummator.js", "getUnique.js", "makeArmy.js"]
+}

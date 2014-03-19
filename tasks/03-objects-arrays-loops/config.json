@@ -1,0 +1,3 @@
+{
+	"files": ["contains.js", "createObject.js", "extractOddItems.js", "toMatrix.js", "toQueryString.js"]
+}

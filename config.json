@@ -1,0 +1,4 @@
+{
+	"titles": ["Conditions", "Operations with arrays", "Operations with functions", "Operations with closures", "Work with timers", "Zoomer", "Slider"],
+	"folders": ["02-if-else", "03-objects-arrays-loops", "04-functions-arguments", "05-functions-closures", "11-timing", "15-zoomer", "16-slider"]
+}

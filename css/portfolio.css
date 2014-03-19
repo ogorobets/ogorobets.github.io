@@ -1,0 +1,167 @@
+.task-container {
+	margin: 0 5%;
+}
+
+.task-list {
+	width: 200px;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 15px;
+}
+
+.tab-container {
+	width: 900px;
+	display: inline-block;
+}
+
+a.list-group-item.active, a.list-group-item.active:hover, a.list-group-item.active:focus {
+	z-index: 2;
+	color: #ffffff;
+	background-color: #2fa4e7;
+	border-color: #2fa4e7;
+}
+
+.list-group-item:first-child {
+	border-top-right-radius: 4px;
+	border-top-left-radius: 4px;
+}
+
+.list-group-item:last-child {
+	margin-bottom: 0;
+	border-bottom-right-radius: 4px;
+	border-bottom-left-radius: 4px;
+}
+
+a.list-group-item {
+	color: #555555;
+}
+
+.list-group-item {
+	position: relative;
+	display: block;
+	padding: 10px 15px;
+	margin-bottom: -1px;
+	background-color: #ffffff;
+	border: 1px solid #dddddd;
+}
+
+.list-group {
+	margin-bottom: 20px;
+	padding-left: 0;
+}
+
+a {
+	color: #2fa4e7;
+	text-decoration: none;
+}
+
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #555555;
+}
+
+.nav-tabs {
+	border-bottom: 1px solid #dddddd;
+}
+
+.nav {
+	margin-bottom: 0;
+	padding-left: 0;
+	list-style: none;
+}
+
+ul.nav.nav-tabs {
+	margin-bottom: 15px;
+}
+
+ul, ol {
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+
+ul, menu, dir {
+	display: block;
+	list-style-type: disc;
+	-webkit-margin-before: 1em;
+	-webkit-margin-after: 1em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	-webkit-padding-start: 40px;
+}
+
+.nav:before, .nav:after {
+	content: " ";
+	display: table;
+}
+
+.nav:after {
+	clear: both;
+}
+
+.nav-tabs > li {
+	float: left;
+	margin-bottom: -1px;
+}
+
+.nav > li {
+	position: relative;
+	display: block;
+}
+
+li {
+	display: list-item;
+	text-align: -webkit-match-parent;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+	color: #555555;
+	background-color: #ffffff;
+	border: 1px solid #dddddd;
+	border-bottom-color: transparent;
+	cursor: default;
+}
+
+.nav-tabs > li > a:hover {
+	background-color: #eeeeee;
+}
+
+.nav-tabs > li > a {
+	margin-right: 2px;
+	line-height: 1.42857143;
+	border: 1px solid transparent;
+	border-radius: 4px 4px 0 0;
+}
+
+.nav > li > a {
+	position: relative;
+	display: block;
+	padding: 10px 15px;
+}
+
+.tab-content > .tab-pane {
+	display: none;
+}
+
+.tab-content > .active {
+	display: block;
+}
+
+.fade {
+	opacity: 0;
+	-webkit-transition: opacity 0.15s linear;
+	transition: opacity 0.15s linear;
+}
+
+.fade.in {
+	opacity: 1;
+}
+
+pre {
+	white-space: pre-wrap;       /* css-3 */
+	white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+	white-space: -pre-wrap;      /* Opera 4-6 */
+	white-space: -o-pre-wrap;    /* Opera 7 */
+	word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}

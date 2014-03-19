@@ -1,0 +1,54 @@
+.zoomer_container {
+	display: block;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 1100;	
+}
+
+.zoomer_container .zoomer_content_container {
+	display: table;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+}
+
+.zoomer_container .zoomer_content_container .zoomer_inner_container {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.zoomer_container .zoomer_content_container .zoomer_inner_container .zoomer_img_container {
+	position: relative;
+	display: inline-block;
+}
+
+.zoomer_container .zoomer_content_container .zoomer_inner_container 
+.zoomer_img_container .zoomer_close_btn {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 7px;
+	font-size: 40px;
+	line-height: 50%;
+	background-color: #E7DECC;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.zoomer_container .zoomer_bg {
+	position: absolute;
+	left: 0;
+    top: 0;
+	z-index: 1;
+	-moz-opacity: 0.50;
+	opacity:.50;
+	filter: alpha(opacity=50);
+	background-color:#A8A8A8;
+	width: 100%;
+	height: 100%;
+}
