@@ -1,15 +1,17 @@
-Задание
-=======
+Task descriptions 
+=================
 
-1. Написать отгадывайку чисел
-Пользователь вводит целое число от 1 до 10, пытаясь угадать загаданное число. Программа выдает сообщения в следующих случаях:
-- когда пользователь отказался от ввода (esc, отмена)
-- когда пользователь ввел некорректное значение (то есть не число, число не указанное в диапазоне)
-- когда пользователь не угадал загаданное число
-- когда пользователь угалал загаданное число
+1. Make a program for guessing a number
+User enters an integer from 1 to 10 trying to guess correct answer. The program shows a message in following cases:
+- when user rejected entering a number (esc, cancel)
+- when user entered incorrect number (i.e. number entered wasn't in specified range)
+- when user didn't guess a number
+- when user guessed correct number
 
-	Загаданное число не обязательно должно меняться при новом запуске программы.
-	Запрос данных у пользователя - `prompt(str)`, где `str` - текст сообщения всплывшего окна
-	Преобразование строки в число - `parseInt(str, 10)`
+	It isn't necessarily for correct answer to change after program restart
+	Request data from user has to be done using `prompt(str)`, where `str` - message text of the popup
 
-2. Задать такие `b`, для которых логические выражения будут возвращать значение, описанное в комментарии рядом
+2. Set such values of variable `b` that will correspond to the correct answers written in comments of logical expressions
+
+
+
