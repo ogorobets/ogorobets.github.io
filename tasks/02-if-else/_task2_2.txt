@@ -1,7 +1,0 @@
-Название папки домашки: 02-if-else
-
-Написать отгадывайку чисел
-https://www.dropbox.com/s/e2edd6w74ux6hm5/description.txt
-
-Задать такие b, для которых логические выражения будут возвращать значение, описанное в комментарии рядом
-https://www.dropbox.com/s/gq64bt9xwuwuqr5/task.js
