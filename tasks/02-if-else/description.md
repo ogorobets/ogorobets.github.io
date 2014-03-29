@@ -9,7 +9,7 @@ User enters an integer from 1 to 10 trying to guess correct answer. The program 
 - when user guessed correct number
 
 	It isn't necessarily for correct answer to change after program restart
-	Request data from user has to be done using `prompt(str)`, where `str` - message text of the popup
+	Request data from user has to be done using `prompt(str)`, where `str` - message text of the popup. Convert string to number using `parseInt(str, 10)`.
 
 2. Set such values of variable `b` that will correspond to the correct answers written in comments of logical expressions
 
