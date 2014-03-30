@@ -1,12 +1,12 @@
-Задание
-=======
+Task desciption
+===============
 
-Реализовать функцию makeZoomable. Она принимает аргументом узел с изображениями. При клике на изображение на весь экран показыается увеличенная версия изображения. Вся страница, кроме увеличенного изображения затемняется. Страницу можно скроллировать. Вместе с изображением в вернем правом углу есть кнопка "Х", при клике на которую увеличенная версия изображения перестает показываться. Так же скрыть увеличенное изображение можно нажав на "ESC". Выравнивать изображение всегда по центру (вертикально и горизонтально) экрана, вне зависимости от пропорций изображения. При ресайзе окна браузера изображение должно оставаться по центру, изменяя свои размеры так, чтобы взлезть во viewport.
+Create function `makeZoomable`. One accepts node with images as an argument. When small image is ckicked large version of the image is displayed on the entire screen. Whole page except large image darkens. Page can be scrolled. There is button "X" in the upper right corner of the image. When it's clicked large image hides. Also large image can be hidden using "ESC" keyboard button. Always justify large image to the center (vertically and horizontally) of screen regardless to image proportions. When the browser window is resized large image has to stay aligned to the center. And image dimensions has to change to fit the viewport.
 
-Ограничения:
+Restrictions:
 
-- должно работать в ие8
-- никаких готовых плагинов
-- реализовать, используя библиотеку jQuery
-- копирование кода из примера реализации makeZoomable запрещено
-- все задачи, которые может решить jQuery, решить с помощью этой библиотеки
+- solution has to work in ie8
+- no ready-made plagins have to be used 
+- implement it using library jQuery
+- copying code from the example of implemantation makeZoomable is forbidden 
+- all tasks that can be solved using jQuery have to done in this way
