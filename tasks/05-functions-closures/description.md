@@ -33,10 +33,10 @@ It isn't necessarily to process value `NaN` in a special way.
 		var mul10_3 = cachableMultiplier(10);
 
 
-3. Написать функцию `createKeeper()`, которая возвращает объект с 2 методами `put(key, value)` и `get(key)`. Метод `get(key)` должен возвращать данные, которые были сохранены с помощью метода `put`, если вызывается с тем-же значением `key`, что и `put`.
-Ключами могут быть как объекты, так и примитивы, про `NaN` не задумываться.
-Если put был вызван с таким ключом, с которым уже был вызван ранее, старое значение перезатирается новым.
-Доступ к ключам и значениями должен быть возможен только через методы `put` и `get`.
+3. Create function `createKeeper()` that returns object with two methods `put(key, value)` and `get(key)`. Method `get(key)` has to return data that were stored using method `put` if it's called with the same value of `key` as method `put` previously. Keys can be both objects and primitives. 
+Don't process value `NaN` in a special way.
+If `put` was called with a key value used previously then corresponding old value is rewritten by the new one.
+Access to keys and corresponding values has to be granted only using methods `put` and `get`.
 
 		var keeper = createKeeper();
 		var key1 = {};
