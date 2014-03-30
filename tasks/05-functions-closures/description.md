@@ -1,8 +1,8 @@
-Задание
-=======
+Task descriptions
+=================
 
-1. Написать функцию `getUnique(arr)`, которая принимает аргументом массив или массивоподоный объект, и возвращает массив уникальных элементов. Аргумент не должен изменяться. Порядок элементов результирующего массива должен совпадать с порядком, в котором они встречаются в оригинальной структуре.  
-Специально обрабатывать значение `NaN` не обязательно.
+1. Create function `getUnique(arr)` that accepts array or array-like object as single argument. The function returns array with unique set of elements.  Passed argument has to stay immutable. Order of elements in result array has to coincide with one in passed argument.
+It isn't necessarily to process value `NaN` in a special way. 
 
 		var a = {};
 		var b = {};
@@ -12,31 +12,22 @@
 		console.log(u[1] === b); // true
 		console.log(u.length === 2); // true
 
+2. Create function `createCachable(func)` that accepts another function as an argument. Function `createCachable(func)` returns new function that returns result of execution `func`. This new function remembers result of execution `func` and returns cached result if some set of argumets were passed to `func` earlier. `createCachable(func)` can create any amount of cached function versions. 
 
-2. Написать функцию `createCachable(func)`, принимающую аргументом функцию. `createCachable(func)` возвращает новую функцию, которая возвращает результат вызоваfunc и запоминает его, или возвращает уже запомненный результат для текущего аргумента. Функция `func` может иметь только один аргумент. `createCachable(func)` может создавать какое угодно количество кешированных версий функций.  
-
-		// функция возвращает квадрат аргумента, 
-		// но выполняется секунду
+		// This funtion returns second power of argument. 
+		// But its execution time equals one second
 		function longTimeMultiplier(num) { 
 		var now = new Date().getTime();
 		  while (new Date().getTime() < now + 1000); 
 		  return num * num;
 		}
 
-		// функция возвращает квадрат аргумента, 
-		// но выполняется секунду 
-		function longTimeMultiplier(num) {
-		var now = new Date().getTime(); 
-		  while (new Date().getTime() < now + 1000);
-		  return num * num; 
-		}
-
 		var cachableMultiplier = createCachable(longTimeMultiplier);
 
-		// Первый вызов выполняется так же долго, как и оригинальная функция
+		// First call of the cached function lasts as long as call of the original function
 		var mul10 = cachableMultiplier(10);
 
-		// Последующие вызовы с тем-же аргументом моментальны
+		// Next calls of the cached function with the same argument are practically instant
 		var mul10_1 = cachableMultiplier(10);
 		var mul10_2 = cachableMultiplier(10);
 		var mul10_3 = cachableMultiplier(10);
@@ -61,13 +52,13 @@
 		keeper.put(key1, key2);
 		console.log(keeper.get(key1Copy) === key2); // true
 
-4. Написать функцию `createSummator(initialValue)`, с опциональным первым параметром, который является точкой отчета счетчика. Если аргумент `initialValue` не передан, то отчет начинается с `0`. При каждом вызове функция возвращает объект с методами `inc(num)`, `dec(num)`, `get()`. Объектов, которые возвращает функция `createSummator(initialValue)`, может быть любое количество.
-Реализация должна позволять манипуляции со значением счетчика только с использованием этих методов.
- - Вызов метода `inc(num)` увеличивает значение счетчика на значение аргумента `num`. Если метод вызван без аргумента, то значение счетчика увеличивается на `1`
- - Вызов метода `dec(num)` уменьшает значение счетчика на значение num, если метод вызван с аргументом. Если метод вызван без аргумента, то значение счетчика уменьшается на `1`
- - Вызов метода `get()` возвращает текущее значение счетчика.  
+4. Create function `createSummator(initialValue)` with optional first argument that is starting point of the counter. If the argument `initialValue` wasn't passed then counting starts from `0`. Each call of the function returns object with methods `inc(num)`, `dec(num)`, `get()`. Function `createSummator(initialValue)` can return any amount of objects.
+Implementation of function `createSummator(initialValue)` has to allow manipulation with counter value only using these methods.
+ - Call of method `inc(num)` increases value of the counter by value of argument `num`. If the method was called without an argument then counter value increases by `1`.
+ - Call of method `dec(num)` decreases value of the counter by value of argument `num`. If the method was called without an argument then counter value decreases by `1`. 
+ - Call of method `get()` returns current value of the counter. 
 
-	Примеры использования: 
+	Exapmles of usage: 
 
 		var s1 = createSummator();
 		s1.inc();
@@ -86,14 +77,14 @@
 		s3.dec(10);
 		console.log(s3.get()); // 0
 
-5. Следующий код создает массив функций-стрелков shooters. По замыслу, каждый стрелок должен выводить свой номер:
+5. Following code creates array of functions-shooters `shooters`. The idea is that each shooter has to show its own id.
 
 		function makeArmy() {
 		  var shooters = [];
 		 
 		  for(var i=0; i<10; i++) {
-		    var shooter = function() { // функция-стрелок
-		      alert(i); // выводит свой номер
+		    var shooter = function() { // functions-shooter
+		      alert(i); // shows its own id
 		    };
 		    shooters.push(shooter);
 		  }
@@ -103,8 +94,8 @@
 		 
 		var army = makeArmy();
 		 
-		army[0](); // стрелок выводит 10, а должен 0
-		army[5](); // стрелок выводит 10...
-		// .. все стрелки выводят 10 вместо 0,1,2...9
-Почему все стрелки́ выводят одно и то же? Поправьте код, чтобы стрелки работали как задумано. Предложите несколько вариантов исправления.
+		army[0](); // shooter shows id 10 instead of 0
+		army[5](); // shooter shows id 10...
+		// .. all shooters show id 10 instaead of 0,1,2...9
+Why function-shooters show all the same? Please correct the code to shooters worked as planned.
 
