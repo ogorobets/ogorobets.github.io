@@ -1,10 +1,9 @@
-Задание
-=======
+Task description
+================
 
-Реализовать класс Slider. Слайдер состоит из фиксированного количества слайдов (4шт), изображения имеют одинаковый заранее известный размер. Переход между слайдами анимирован. При клике на плашку слева происходит переход к соответствующему слайдеру, соответствие определяется порядком. Верхняя плашка - первый слайд, вторая сверху - второй, итд.
-Сразу же после инициализации у слайдера включается режим автопрокрутки: показ следующего слайда каждые 2 секунды. Если пользователь кликнул на одну из плашек, перейдя к слайду, автопрокрутку нужно отключить. Автопрокрутку нужно включать через 5 секунд после последнего клика пользователя по плашке. Автопрокрутка циклическая: с последнего слайда происходит переход к первому. На странице можно разместить несколько слайдеров.
+Implement class `Slider`. Slider consists of fixed amount of 4 slides. Images have the same  dimensions known in advance. Changing slides is animated. When one of the bars on the left is clicked then slide is changed. Order of bars on the left coincides with one of slides(images). First bar - first slide, second bar from the top - second slide, etc. Right after initialization slider enables autoscrolling mode: another slide shows each 2 seconds. If user clicked on one of the bars on the left and after that current slide was changed then  autoscrolling mode has to be disabled. Autoscrolling mode has to be enabled again after bar was clicked and 5 seconds expired. Autoscrolling is cyclic: after the last slide is shown first slide is shown again. There is can be more than one slider on th page.
 
-- использовать возможности jQuery по максимум
-- слайдер должен работать в ie8
-- никаких готовых плагинов, только самописный код
-- слайдер должен быть реализован на прототипах
+- use opportunities of jQuery for maximum 
+- slider has to work in ie8
+- no ready-made plugins have to be used, only write your own code
+- slider has to be implemented using prototypes 
