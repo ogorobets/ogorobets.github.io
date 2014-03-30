@@ -20,7 +20,7 @@ Task descriptions
         toMatrix([1,2,3], 5); // [[1,2,3]]
         toMatrix([], 3); // []
 
-5. Create function`toQueryString(obj)` that accepts object as an argument and returns string.   For example:
+5. Create function `toQueryString(obj)` that accepts object as an argument and returns string.   For example:
 
         toQueryString({}); // -> ''
         toQueryString({test: true}); // -> 'test=true'
