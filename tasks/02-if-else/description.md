@@ -1,7 +1,7 @@
 Task descriptions 
 =================
 
-1. Make a program for guessing a number
+1. Make a program for guessing a number.
 User enters an integer from 1 to 10 trying to guess correct answer. The program shows a message in following cases:
 - when user rejected entering a number (esc, cancel)
 - when user entered incorrect number (i.e. number entered wasn't in specified range)
